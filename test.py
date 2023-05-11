@@ -17,7 +17,11 @@ model.fit(X, Y)
 print(model.theta)
 
 #ver3のtest
-importlib.reload(regression)
 model = regression.LinearRegression()
 model.fit(X, Y)
 print(model.predict(X))
+
+#ver4のtest
+model = regression.LinearRegression()
+model.fit(X, Y)
+print(model.score(X, Y))
